@@ -66,7 +66,7 @@ def impostoderenda(quantdep2,sb,grati,inss):
         return(ir)
 # Função Salário líquido
 def salarioliq(sb,grati,vt,pds,inss,salfam,ir):
-    saliq=(sb+grati)-(vt+pds+inss+salfam+ir)
+    saliq=(sb+grati+salfam)-(vt+pds+inss+ir)
     return(saliq)
     
  # Leitura de dados
