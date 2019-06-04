@@ -26,7 +26,10 @@
 <img src="logos.png">
 </div>
 	
-	<?php include 'menu.php' ?>
+	<?php include 'menu.php';
+	include 'functions.php';
+	echo verificarMsg();
+	?>
 <div class="p-2 mb-2 alert alert-danger text-dark text-center rounded">Área dedicada a exclusão de contatos:</div>
 
 	<?php
@@ -63,9 +66,11 @@
 				echo "<strong>$indice</strong>:" . $valor . "<br>";
 			}
 			
-			echo '<a href="deletar.php?id='.$id.'"onclick="return confirm(\'Deseja excluir este contato?\')"class="btn btn-danger">DELETAR</a>';
+			echo '<a href="deletar.php?id='.$id.'"onclick="return confirm(\'Deseja excluir este contato?\')"class="btn btn-danger">Deletar</a>';
 			
-			echo "</p>";
+			echo '<a href="editar.php?id=' . $id . '"class="btn btn-warning">Editar</a>';
+
+			echo '</p>';
 		}
 	}
 	else
@@ -86,7 +91,7 @@
 			<p class="p- mb-2">Email: guilhermerck@gmail.com</p>	
 			</div>
 			<div class="col-xs-12 col-sn-12 col-md-4 col-lg-4">
-			<p class="p- mb-2">Contato: (41)98731-5457</p>
+			<p class="p- mb-2">Contato: (41) 98731-5457</p>
 			</div>
 		</div>
 	</div>

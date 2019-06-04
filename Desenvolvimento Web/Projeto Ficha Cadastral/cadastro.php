@@ -74,7 +74,7 @@
 			<p class="p- mb-2">Email: guilhermerck@gmail.com</p>	
 			</div>
 			<div class="col-xs-12 col-sn-12 col-md-4 col-lg-4">
-			<p class="p- mb-2">Contato: (41)98731-5457</p>
+			<p class="p- mb-2">Contato: (41) 98731-5457</p>
 			</div>
 		</div>
 	</div>
