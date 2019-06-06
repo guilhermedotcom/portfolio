@@ -1,4 +1,4 @@
-<?php  
+<?php include "lock.php";  
 
 if(empty($_GET['id_filme']))
 {

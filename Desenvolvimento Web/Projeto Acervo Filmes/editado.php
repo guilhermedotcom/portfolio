@@ -1,4 +1,4 @@
-<?php  
+<?php include "lock.php";  
 
 if(empty($_POST['id_filme']) || empty($_POST['titulo']) || empty($_POST['genero']) || empty($_POST['ano']) || empty($_POST['diretor']) || empty($_POST['estudio']))
 {

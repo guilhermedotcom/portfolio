@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Home Filmes - CRUD</title>
+	<title>Login Filmes - CRUD</title>
 	<meta charset="utf-8">
 </head>
 <body class="container-fluid text-center">
@@ -28,29 +28,25 @@
 	include 'functions.php';
 	echo verificarMsg();
 	?>
-	<h4>Cadastro de Filmes</h4></a>
-	
-	<div class="alert alert-info" roles="alert">
-		Acesse a área de cadastro de filmes:</div>
 
-<img src="cadastro.jpg" class="img-fluid max-width rounded" alt="">
-<p></p>
-<ul class="nav rounded bg-dark text-white">
-<div class="container-fluid" id="container-rodape">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sn-12 col-md-4 col-lg-4">
-			<p class="p- mb-2">Desenvolvido por Guilherme Ferreira</p>	
-			</div>
-			<div class="col-xs-12 col-sn-12 col-md-4 col-lg-4">
-			<p class="p- mb-2">Email: guilhermerck@gmail.com</p>	
-			</div>
-			<div class="col-xs-12 col-sn-12 col-md-4 col-lg-4">
-			<p class="p- mb-2">Contato: (41)98731-5457</p>
-			</div>
-		</div>
-	</div>
-</div>
-</ul>
+	<h4>Login</h4>
+	<h5 class="alert alert-info">Informe seus dados para acessar a área restrita.</h5>
+	<form action="validar.php" method="post">
+
+		<p>
+			<label for="usarname">Usuário</label><br>
+			<input class="form-control" type="text" name="username" placeholder="Usuário">
+		</p>
+		<p>
+			<label for="password">Senha:</label><br>
+			<input class="form-control" type="password" name="password" placeholder="Senha">
+		</p>
+		<p>
+			<button type="submit" class="btn btn-primary">Entrar</button>
+			<button type="reset" class="btn btn-danger">Limpar</button>
+		</p>
+		
+	</form>
+
 </body>
 </html>
