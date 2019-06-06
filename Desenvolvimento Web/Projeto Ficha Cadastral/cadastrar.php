@@ -1,3 +1,4 @@
+<?php include 'lock.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,8 +32,8 @@
 		<div class="alert alert-success"><h6>Cadastro de Contato</h6></div>
 
 		<p>
-			<label>Nome:</label><br>
-			<input class="form-control" type="text" name="nome" placeholder="Nome">
+			<label for="input-sm">Nome:</label><br>
+			<input class="form-control input-sm" type="text" name="nome" placeholder="Nome">
 
 		</p>
 

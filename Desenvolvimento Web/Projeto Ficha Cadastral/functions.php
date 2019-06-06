@@ -35,6 +35,18 @@ function verificarMsg()
 		{
 			$retorno = '<h5 class="alert alert-danger">Atenção: Não foi possível excluir o contato.</h5>';
 		}
+		elseif($msg == 'logSuccess')
+		{
+			$retorno = '<h5 class="alert alert-success">Login realizado com sucesso!</h5>';
+		}
+		elseif($msg == 'logError')
+		{
+			$retorno = '<h5 class="alert alert-danger">Erro ao logar!</h5>';
+		}
+		elseif($msg == 'empty_fields')
+		{
+			$retorno = '<h5 class="alert alert-warning">Campos em branco na área de login!</h5>';
+		}
 		else
 		{
 			$retorno = '';

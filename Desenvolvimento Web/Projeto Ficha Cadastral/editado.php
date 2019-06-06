@@ -1,4 +1,4 @@
-<?php  
+<?php include 'lock.php';
 
 if(empty($_POST['nome']) || empty($_POST['idade']) || empty($_POST['email']) || empty($_POST['id']))
 {
