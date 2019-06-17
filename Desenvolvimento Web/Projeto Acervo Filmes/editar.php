@@ -1,4 +1,3 @@
-<?php include "lock.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -69,11 +68,28 @@
 		</p>
 
 		<p>
-			<label>Genero:</label><br>
-			<input class="form-control" type="text" name="genero" placeholder="Genero" value="<?php echo $filme['genero']?>">
+			<label>Genêro:</label><br>
+			<select name="genero" class="form-control" type="text" value="<?php echo $filme['genero']?>">
+			<option>Ação</option>
+			<option>Animação</option>
+			<option>Aventura</option>
+			<option>Comédia</option>
+			<option>Dança</option>
+			<option>Drama</option>
+			<option>Documentário</option>
+			<option>Erótico</option>
+			<option>Fantasia</option>
+			<option>Faroeste</option>
+			<option>Ficção Ciêntifica</option>
+			<option>Guerra</option>
+			<option>Policial</option>
+			<option>Romance</option>
+			<option>Suspense</option>
+			<option>Terror</option>
+			</select>
 
 		</p>
-
+		
 		<p>
 			<label>Ano de Lançamento:</label><br>
 			<input class="form-control" type="number" name="ano" placeholder="Ano de lançamento" value="<?php echo $filme['ano']?>">

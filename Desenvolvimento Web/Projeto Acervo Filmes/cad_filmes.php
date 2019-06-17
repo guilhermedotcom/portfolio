@@ -1,4 +1,3 @@
-<?php include "lock.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,7 +38,24 @@
 
 		<p>
 			<label>Genêro:</label><br>
-			<input placeholder="Genêro" name="genero" class="form-control" type="text">
+			<select name="genero" class="form-control" type="text">
+			<option>Ação</option>
+			<option>Animação</option>
+			<option>Aventura</option>
+			<option>Comédia</option>
+			<option>Dança</option>
+			<option>Drama</option>
+			<option>Documentário</option>
+			<option>Erótico</option>
+			<option>Fantasia</option>
+			<option>Faroeste</option>
+			<option>Ficção Ciêntifica</option>
+			<option>Guerra</option>
+			<option>Policial</option>
+			<option>Romance</option>
+			<option>Suspense</option>
+			<option>Terror</option>
+			</select>
 
 		</p>
 

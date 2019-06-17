@@ -1,5 +1,5 @@
 <?php  
-//função para verificar qual o valor do parametro 'msg' enviado para algumas páginas e retornar mensagem apropriada, ou retornar uma string vazia.
+
 function verificarMsg()
 {
 	if(empty($_GET['msg']))
@@ -16,36 +16,24 @@ function verificarMsg()
 		}
 		elseif($msg == 'edtSuccess')
 		{
-			$retorno = '<h5 class="alert alert-success">Contato editado com sucesso!</h5>';
+			$retorno = '<h5 class="alert alert-success">Filme editado com sucesso!</h5>';
 		}
 		elseif($msg == 'edtError')
 		{
-			$retorno = '<h5 class="alert alert-danger">Atenção: Não foi possível editar o contato.<br>
+			$retorno = '<h5 class="alert alert-danger">Atenção: Não foi possível editar o filme.<br>
 			Tente novamente ou entre em contato com o suporte.</h5>';
 		}
 		elseif($msg == 'noId')
 		{
-			$retorno = '<h5 class="alert alert-warning">Atenção: Não foi possível encontrar o cantato para exclusão</h5>';
+			$retorno = '<h5 class="alert alert-warning">Atenção: Não foi possível encontrar o filme para exclusão</h5>';
 		}
 		elseif($msg == 'delSuccess')
 		{
-			$retorno = '<h5 class="alert alert-success">Contato excluido com sucesso!</h5>';
+			$retorno = '<h5 class="alert alert-success">Filme excluido com sucesso!</h5>';
 		}
 		elseif($msg == 'delError')
 		{
-			$retorno = '<h5 class="alert alert-danger">Atenção: Não foi possível excluir o contato.</h5>';
-		}
-		elseif($msg == 'logSuccess')
-		{
-			$retorno = '<h5 class="alert alert-success">Login realizado com sucesso!</h5>';
-		}
-		elseif($msg == 'logError')
-		{
-			$retorno = '<h5 class="alert alert-danger">Erro ao logar!</h5>';
-		}
-		elseif($msg == 'empty_fields')
-		{
-			$retorno = '<h5 class="alert alert-warning">Campos em branco na área de login!</h5>';
+			$retorno = '<h5 class="alert alert-danger">Atenção: Não foi possível excluir o filme.</h5>';
 		}
 		else
 		{

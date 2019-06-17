@@ -24,10 +24,7 @@
 </nav>
 	
 	<img src="logos.jpg" class="rounded">
-	<?php include 'menu.php'; 
-	include 'functions.php';
-	echo verificarMsg();
-	?>
+	<?php include 'menu.php'; ?>
 	<h4>Cadastro de Filmes</h4></a>
 	
 	<div class="alert alert-info" roles="alert">
